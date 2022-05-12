@@ -13,9 +13,51 @@
         <link>https://hugo-theme-luna.imiku.me/</link>
         <managingEditor>Ice-Hazymoon</managingEditor>
         <description>A simple, performance-first, SEO-friendly Hugo theme</description>
-        <lastBuildDate>Wed, 11 May 2022 02:49:13 +0200</lastBuildDate>
+        <lastBuildDate>Thu, 12 May 2022 02:49:13 +0200</lastBuildDate>
         <language>en-us</language>
         <generator>Hugo -- gohugo.io</generator><item>
+            <title>前端全链路优化方案</title>
+            <link>https://hugo-theme-luna.imiku.me/2022/05/12/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88.html/</link>
+            <pubDate>Thu, 12 May 2022 02:49:13 +0200</pubDate>
+            <guid>https://hugo-theme-luna.imiku.me/2022/05/12/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88.html/</guid>
+            <description>&lt;h1 id=&#34;图片优化&#34;&gt;图片优化&lt;/h1&gt;
+&lt;h2 id=&#34;如何为不同格式的图片选择合适的应用场景&#34;&gt;如何为不同格式的图片选择合适的应用场景&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;JPEG（Joint Photographic Experts Group）.&lt;/strong&gt;
+&lt;em&gt;联合图像专家小组是一种针对彩色图片而广泛使用的有损压缩图片格式&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;介绍: 栅格图形。常用文件扩展名为 jpg, 也有 .jpeg, .jpe。 JPEG 在互联网上常被应用于存储和传输图片。&lt;/li&gt;
+&lt;li&gt;不合适: 线条图形和文字，图标图形，因为它的压缩算法不太适合这些类型的图片，并且不支持透明度。&lt;/li&gt;
+&lt;li&gt;非常适合: 颜色丰富的照片，彩色图大焦点图，通栏 banner 图，结构不规则的图形。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PNG（Portable Network Graphics）.&lt;/strong&gt;
+&lt;em&gt;便捷式网络图形是一种无损压缩的位图图形格式，支持索引，灰度，RGB 三种颜色方案以及 Alpha 通道等特性&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;介绍: 栅格图形。PNG 最初是作为替代 GIF 来设计的，能够显示 256 色，文件比 JPEG 或者 GIF 大，但是 PNG 非常好的保留了图像质量。支持 Alpha 通道的半透明和透明特性。最高支持 24 位彩色图像（PNG-24）和 8 位灰度图像（PNG-8）。&lt;/li&gt;
+&lt;li&gt;不合适: 由于是无损存储，彩色图像体积太大，所以不合适。&lt;/li&gt;
+&lt;li&gt;非常适合: 纯色，透明，线条绘图，图标。边缘清晰，有大块相同颜色的区域，颜色数较少但需要半透明。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GIF（Graphics Interchange Format）.&lt;/strong&gt;
+&lt;em&gt;图像互换格式是一种位图图形文件格式，以 8 位色（既 256 种颜色）重现真彩色的图像，采用 LZW 压缩算法进行编码&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;介绍: 栅格图形。支持 256 色，仅支持完全透明和完全不透明。如果需要比较通用的动画，GIF 是唯一选择。&lt;/li&gt;
+&lt;li&gt;不合适: 每个像素只有 8 比特，不适合存储彩色图片。&lt;/li&gt;
+&lt;li&gt;非常适合: 动画，图标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Webp.&lt;/strong&gt;
+&lt;em&gt;Webp是一种现代图像格式，可为图像提供无损压缩和有损压缩，这使得它非常灵活，有Google在购买On2 Technologies后发展出来，以BSD授权条款发布&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;介绍: 优秀算法能够同时保证一定程序上的图像质量和比较小的体积。可以插入多帧，实现动画效果。可以设置透明度。采用8位压缩算法，无损的Webp比PNG小26%。有损的Webp比JPEG小25%～34%，比GIF有更好的动画。&lt;/li&gt;
+&lt;li&gt;不合适: 最多处理256色，不适合彩色图片。&lt;/li&gt;
+&lt;li&gt;非常适合: 适用于图形和半透明图像。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+            </item><item>
             <title>那个女孩</title>
             <link>https://hugo-theme-luna.imiku.me/2022/05/11/%E9%82%A3%E4%B8%AA%E5%A5%B3%E5%AD%A9.html/</link>
             <pubDate>Wed, 11 May 2022 02:49:13 +0200</pubDate>

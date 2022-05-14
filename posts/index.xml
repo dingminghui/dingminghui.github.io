@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 12 May 2022 02:49:13 +0200</lastBuildDate><atom:link href="https://hugo-theme-luna.imiku.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>前端全链路优化方案 - Html优化</title>
+      <link>https://hugo-theme-luna.imiku.me/2022/05/12/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-html%E4%BC%98%E5%8C%96.html/</link>
+      <pubDate>Thu, 12 May 2022 02:49:13 +0200</pubDate>
+      
+      <guid>https://hugo-theme-luna.imiku.me/2022/05/12/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-html%E4%BC%98%E5%8C%96.html/</guid>
+      <description>记录极客时间《前端全链路优化实战》课程的方案</description>
+    </item>
+    
+    <item>
       <title>前端全链路优化方案 - 图片优化</title>
       <link>https://hugo-theme-luna.imiku.me/2022/05/12/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-%E5%9B%BE%E7%89%87%E4%BC%98%E5%8C%96.html/</link>
       <pubDate>Thu, 12 May 2022 02:49:13 +0200</pubDate>

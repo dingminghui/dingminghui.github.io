@@ -13,13 +13,85 @@
         <link>https://hugo-theme-luna.imiku.me/</link>
         <managingEditor>Ice-Hazymoon</managingEditor>
         <description>A simple, performance-first, SEO-friendly Hugo theme</description>
-        <lastBuildDate>Thu, 12 May 2022 02:49:13 +0200</lastBuildDate>
+        <lastBuildDate>Sat, 14 May 2022 22:17:18 +0800</lastBuildDate>
         <language>en-us</language>
         <generator>Hugo -- gohugo.io</generator><item>
-            <title>前端全链路优化方案 - Html优化</title>
-            <link>https://hugo-theme-luna.imiku.me/2022/05/12/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-html%E4%BC%98%E5%8C%96.html/</link>
-            <pubDate>Thu, 12 May 2022 02:49:13 +0200</pubDate>
-            <guid>https://hugo-theme-luna.imiku.me/2022/05/12/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-html%E4%BC%98%E5%8C%96.html/</guid>
+            <title>前端全链路优化方案 - CSS优化</title>
+            <link>https://hugo-theme-luna.imiku.me/2022/05/14/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-css%E4%BC%98%E5%8C%96.html/</link>
+            <pubDate>Sat, 14 May 2022 22:17:18 +0800</pubDate>
+            <guid>https://hugo-theme-luna.imiku.me/2022/05/14/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-css%E4%BC%98%E5%8C%96.html/</guid>
+            <description>&lt;h2 id=&#34;提升-css-渲染性能&#34;&gt;提升 CSS 渲染性能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;谨慎使用 expensive 属性
+&lt;ul&gt;
+&lt;li&gt;如： &lt;code&gt; :nth-child 伪类、position: fixed 定位&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;尽量减少样式层级数
+&lt;ul&gt;
+&lt;li&gt;如：&lt;code&gt;div ul li span i {color: blue;}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;尽量避免使用占用过多 CUP 和内存的属性
+&lt;ul&gt;
+&lt;li&gt;如：&lt;code&gt;text-indnt: -999999px&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;尽量避免使用耗电量大的属性
+&lt;ul&gt;
+&lt;li&gt;如： &lt;code&gt;CSS 3D transforms、CSS3 transitions、Opacity&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;合理使用-css-选择器&#34;&gt;合理使用 CSS 选择器&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;尽量避免使用 CSS 表达式
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;background-color: expression((new Date()).getHours() % 2 ? &amp;quot;#FFF&amp;quot;: &amp;quot;#000&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;尽量避免使用通配选择器
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;body &amp;gt; a {font-weight: blod;}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;尽量避免类正则的属性选择器
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*=、!=、$=&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;提升-css-文件加载性能&#34;&gt;提升 CSS 文件加载性能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用外链的 CSS&lt;/li&gt;
+&lt;li&gt;尽量避免使用 @import&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;精简-css-代码&#34;&gt;精简 CSS 代码&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用缩写语句&lt;/li&gt;
+&lt;li&gt;删除不需要的零&lt;/li&gt;
+&lt;li&gt;删除不必要的单位，如 px&lt;/li&gt;
+&lt;li&gt;删除空格和注释&lt;/li&gt;
+&lt;li&gt;尽量减少样式表的大小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;合理使用-web-fonts&#34;&gt;合理使用 Web Fonts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;将字体部署到 CDN 上&lt;/li&gt;
+&lt;li&gt;将字体以 base 64 形式保存在 CSS 中并通过 localStorage 进行缓存&lt;/li&gt;
+&lt;li&gt;Google 字体库应尽量使用国内托管服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;css-动画优化&#34;&gt;CSS 动画优化&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;尽量避免同时动画&lt;/li&gt;
+&lt;li&gt;延迟动画处始化&lt;/li&gt;
+&lt;li&gt;结合 SVG&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item><item>
+            <title>前端全链路优化方案 - HTML优化</title>
+            <link>https://hugo-theme-luna.imiku.me/2022/05/14/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-html%E4%BC%98%E5%8C%96.html/</link>
+            <pubDate>Sat, 14 May 2022 02:49:13 +0200</pubDate>
+            <guid>https://hugo-theme-luna.imiku.me/2022/05/14/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-html%E4%BC%98%E5%8C%96.html/</guid>
             <description>&lt;h2 id=&#34;精简-html-代码&#34;&gt;精简 HTMl 代码&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;减少 HTML 嵌套&lt;/li&gt;

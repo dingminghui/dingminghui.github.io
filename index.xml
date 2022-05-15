@@ -13,9 +13,131 @@
         <link>https://hugo-theme-luna.imiku.me/</link>
         <managingEditor>Ice-Hazymoon</managingEditor>
         <description>A simple, performance-first, SEO-friendly Hugo theme</description>
-        <lastBuildDate>Sat, 14 May 2022 22:17:18 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 15 May 2022 12:28:45 +0800</lastBuildDate>
         <language>en-us</language>
         <generator>Hugo -- gohugo.io</generator><item>
+            <title>前端全链路优化方案 - JavaScript</title>
+            <link>https://hugo-theme-luna.imiku.me/2022/05/15/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-javascript.html/</link>
+            <pubDate>Sun, 15 May 2022 12:28:45 +0800</pubDate>
+            <guid>https://hugo-theme-luna.imiku.me/2022/05/15/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-javascript.html/</guid>
+            <description>&lt;h2 id=&#34;如何提升-javascript-的执行效率-&#34;&gt;如何提升 JavaScript 的执行效率 ?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JS 优化总体原则&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当需要时才优化&lt;/li&gt;
+&lt;li&gt;考虑可维护性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;提升 JS 文件加载性能&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;加载元素的顺序 CSS 文件放在 head 里，JS 文件放在 body 里&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JS 变量和函数优化&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;尽量使用 ID 选择器&lt;/li&gt;
+&lt;li&gt;尽量避免使用 eval&lt;/li&gt;
+&lt;li&gt;JS 函数尽可能保持简洁&lt;/li&gt;
+&lt;li&gt;使用事件节流函数&lt;/li&gt;
+&lt;li&gt;使用事件委托&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JS 动画优化&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;避免添加大量 JS 动画&lt;/li&gt;
+&lt;li&gt;尽量使用 CSS3 动画&lt;/li&gt;
+&lt;li&gt;尽量使用 Canvas 动画&lt;/li&gt;
+&lt;li&gt;合理使用 requestAnimationFrame 动画代替 setTimeout、setInterval
+&lt;ul&gt;
+&lt;li&gt;requestAnimationFrame 可以在正确的时间进行渲染，setTimeout（callback）和 setInterval（callback）无法保证 callback 回调函数的执行时机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;合理使用缓存&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合理缓存 DOM 对象&lt;/li&gt;
+&lt;li&gt;缓存列表长度&lt;/li&gt;
+&lt;li&gt;使用可缓存的 Ajax&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何对-javascript-的缓存进行优化-&#34;&gt;如何对 JavaScript 的缓存进行优化 ?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cookie&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通常由浏览器存储，然后将 Cookie 与每一个后续请求一起发送到同一服务器。收到 HTTP 请求时，服务器可以发送带有 Cookie 的 header 头，可以给 Cookie 设置有效时间&lt;/li&gt;
+&lt;li&gt;应用于：
+&lt;ul&gt;
+&lt;li&gt;会话管理：登录名，购物车商品，游戏得分等&lt;/li&gt;
+&lt;li&gt;个性化：用户首选项，主题或其他设置&lt;/li&gt;
+&lt;li&gt;跟踪：记录和分析用户行为，例：埋点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;sessionStorage&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建一个本地存储的键/值对（浏览器关闭后数据丢失）&lt;/li&gt;
+&lt;li&gt;应用于：
+&lt;ul&gt;
+&lt;li&gt;页面应用之间的传值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;IndexedDB&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;索引数据库&lt;/li&gt;
+&lt;li&gt;应用于：
+&lt;ul&gt;
+&lt;li&gt;客户端存储大量结构化数据&lt;/li&gt;
+&lt;li&gt;没有网络连接的情况下使用（比如 Google Doc、石墨文档）&lt;/li&gt;
+&lt;li&gt;将冗余、很少更改、但经常访问的数据、以避免随时从服务器获取数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LocalStorage&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本地存储&lt;/li&gt;
+&lt;li&gt;应用于：
+&lt;ul&gt;
+&lt;li&gt;缓存静态文件内容 JS/CSS&lt;/li&gt;
+&lt;li&gt;缓存不常变更的 API 接口数据&lt;/li&gt;
+&lt;li&gt;存储地理位置信息&lt;/li&gt;
+&lt;li&gt;浏览在页面的具体位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何选择合适的模块化加载方案-&#34;&gt;如何选择合适的模块化加载方案 ？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JS 模块化加载方案和选型&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CommonJS
+&lt;ul&gt;
+&lt;li&gt;旨在 Web 浏览器之外为 JavaScript 建立模块生态系统&lt;/li&gt;
+&lt;li&gt;Node.js 模块化方案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ES6 Import&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+            </item><item>
             <title>前端全链路优化方案 - CSS优化</title>
             <link>https://hugo-theme-luna.imiku.me/2022/05/14/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-css%E4%BC%98%E5%8C%96.html/</link>
             <pubDate>Sat, 14 May 2022 22:17:18 +0800</pubDate>

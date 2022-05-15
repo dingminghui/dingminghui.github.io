@@ -13,9 +13,68 @@
         <link>https://hugo-theme-luna.imiku.me/</link>
         <managingEditor>Ice-Hazymoon</managingEditor>
         <description>A simple, performance-first, SEO-friendly Hugo theme</description>
-        <lastBuildDate>Sun, 15 May 2022 12:28:45 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 15 May 2022 13:57:20 +0800</lastBuildDate>
         <language>en-us</language>
         <generator>Hugo -- gohugo.io</generator><item>
+            <title>DOM编程优化：怎样控制DOM大小并简化DOM操作 ？</title>
+            <link>https://hugo-theme-luna.imiku.me/2022/05/15/dom%E7%BC%96%E7%A8%8B%E4%BC%98%E5%8C%96%E6%80%8E%E6%A0%B7%E6%8E%A7%E5%88%B6dom%E5%A4%A7%E5%B0%8F%E5%B9%B6%E7%AE%80%E5%8C%96dom%E6%93%8D%E4%BD%9C.html/</link>
+            <pubDate>Sun, 15 May 2022 13:57:20 +0800</pubDate>
+            <guid>https://hugo-theme-luna.imiku.me/2022/05/15/dom%E7%BC%96%E7%A8%8B%E4%BC%98%E5%8C%96%E6%80%8E%E6%A0%B7%E6%8E%A7%E5%88%B6dom%E5%A4%A7%E5%B0%8F%E5%B9%B6%E7%AE%80%E5%8C%96dom%E6%93%8D%E4%BD%9C.html/</guid>
+            <description>&lt;h2 id=&#34;控制-dom-大小&#34;&gt;控制 DOM 大小&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;众所周知，页面交互卡顿和流畅度很大一部分原因就是页面大量的 DOM 元素。想像一下，从一个上万节点的 DOM 树上，使用 querySelectorAll 或者 getElementByTagName 方法查找某一个节点，是非常耗时的。另外元素绑定事件，事件冒泡和事件捕获的执行也会相当耗时。&lt;/li&gt;
+&lt;li&gt;通常控制 DOM 大小的技巧包括:
+&lt;ul&gt;
+&lt;li&gt;合理 的业务逻辑&lt;/li&gt;
+&lt;li&gt;延迟加载即将呈现的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;简化-dom-操作&#34;&gt;简化 DOM 操作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;对 DOM 节点的操作统一处理后，在统一插入到 DOM Tree 中&lt;/li&gt;
+&lt;li&gt;可以使用 fragment，尽量不在页面 DOM tree 里直接操作&lt;/li&gt;
+&lt;li&gt;现在流行的框架 Angular，React，Vue 都在使用虚拟 DOM 技术，通过 diff 算法简化和减少 DOM 操作&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item><item>
+            <title>怎样才能减少浏览器的重绘和回流 ？</title>
+            <link>https://hugo-theme-luna.imiku.me/2022/05/15/%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E5%87%8F%E5%B0%91%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E9%87%8D%E7%BB%98%E5%92%8C%E5%9B%9E%E6%B5%81.html/</link>
+            <pubDate>Sun, 15 May 2022 13:42:20 +0800</pubDate>
+            <guid>https://hugo-theme-luna.imiku.me/2022/05/15/%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E5%87%8F%E5%B0%91%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E9%87%8D%E7%BB%98%E5%92%8C%E5%9B%9E%E6%B5%81.html/</guid>
+            <description>&lt;h2 id=&#34;css&#34;&gt;CSS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;避免过多的样式嵌套&lt;/li&gt;
+&lt;li&gt;避免使用 CSS 表达式&lt;/li&gt;
+&lt;li&gt;使用绝对定位，可以让动画元素脱离文档流&lt;/li&gt;
+&lt;li&gt;避免使用 table 布局&lt;/li&gt;
+&lt;li&gt;尽量不使用 float 布局&lt;/li&gt;
+&lt;li&gt;图片最好都设置 width 和 height&lt;/li&gt;
+&lt;li&gt;尽量简化浏览器不必要的任务，减少页面重新布局&lt;/li&gt;
+&lt;li&gt;使用 Viewport 设置屏幕缩放级别&lt;/li&gt;
+&lt;li&gt;避免频繁设置样式，最好把新 style 属性设置完成后，进行一次性更改&lt;/li&gt;
+&lt;li&gt;避免使用引起回流 / 重绘的属性，最好把相应变量缓存起来&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;js&#34;&gt;JS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;最小化回流和重排
+&lt;ul&gt;
+&lt;li&gt;为了减少回流发生次数，避免频繁或操作 DOM。可以合并多次对 DOM 的修改，然后一次性批量处理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;控制绘制过程和绘制区域
+&lt;ul&gt;
+&lt;li&gt;绘制过程开销比较大的属性设置应该尽量避免减少使用&lt;/li&gt;
+&lt;li&gt;减少绘制区域范围&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;推荐插件: Lighthouse&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lighthouse 是一个开源的自动化工具，用于改进网络应用的质量。 您可以将其作为一个 Chrome 扩展程序运行，或从命令行运行。 您为 Lighthouse 提供一个您要审查的网址，它将针对此页面运行一连串的测试，然后生成一个有关页面性能的报告。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item><item>
             <title>前端全链路优化方案 - JavaScript</title>
             <link>https://hugo-theme-luna.imiku.me/2022/05/15/%E5%89%8D%E7%AB%AF%E5%85%A8%E9%93%BE%E8%B7%AF%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-javascript.html/</link>
             <pubDate>Sun, 15 May 2022 12:28:45 +0800</pubDate>

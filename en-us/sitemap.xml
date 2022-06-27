@@ -2,18 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hugo-theme-luna.imiku.me/links/</loc>
-    <lastmod>2022-05-12T10:05:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://hugo-theme-luna.imiku.me/posts/</loc>
-    <lastmod>2022-05-21T21:18:33+08:00</lastmod>
+    <lastmod>2022-06-27T18:34:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://hugo-theme-luna.imiku.me/tags/</loc>
-    <lastmod>2022-05-21T21:18:33+08:00</lastmod>
+    <lastmod>2022-06-27T18:34:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -28,7 +23,7 @@
                 />
   </url><url>
     <loc>https://hugo-theme-luna.imiku.me/</loc>
-    <lastmod>2022-05-21T21:18:33+08:00</lastmod>
+    <lastmod>2022-06-27T18:34:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -42,22 +37,32 @@
                 href="https://hugo-theme-luna.imiku.me/"
                 />
   </url><url>
-    <loc>https://hugo-theme-luna.imiku.me/tags/%E5%88%9D%E6%81%8B/</loc>
-    <lastmod>2022-05-21T21:18:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://hugo-theme-luna.imiku.me/2022/05/11/%E9%82%A3%E4%B8%AA%E5%A5%B3%E5%AD%A9.html/</loc>
-    <lastmod>2022-05-21T21:18:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://hugo-theme-luna.imiku.me/2022/01/11/%E6%88%BF%E6%80%9D%E7%90%AA%E7%9A%84%E5%88%9D%E6%81%8B%E4%B9%90%E5%9B%AD%E8%A7%82%E5%90%8E%E6%84%9F.html/</loc>
-    <lastmod>2022-05-09T16:43:24+08:00</lastmod>
+    <loc>https://hugo-theme-luna.imiku.me/2022/06/27/%E6%88%91.html/</loc>
+    <lastmod>2022-06-27T18:34:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://hugo-theme-luna.imiku.me/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2022-06-27T18:34:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hugo-theme-luna.imiku.me/links/</loc>
+    <lastmod>2022-05-12T10:05:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hugo-theme-luna.imiku.me/tags/%E5%88%9D%E6%81%8B/</loc>
+    <lastmod>2022-06-27T18:34:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hugo-theme-luna.imiku.me/2022/05/11/%E9%82%A3%E4%B8%AA%E5%A5%B3%E5%AD%A9.html/</loc>
+    <lastmod>2022-06-27T18:34:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hugo-theme-luna.imiku.me/2022/01/11/%E6%88%BF%E6%80%9D%E7%90%AA%E7%9A%84%E5%88%9D%E6%81%8B%E4%B9%90%E5%9B%AD%E8%A7%82%E5%90%8E%E6%84%9F.html/</loc>
     <lastmod>2022-05-09T16:43:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>摘要 on Ding</title>
+    <link>http://localhost:1313/tags/%E6%91%98%E8%A6%81/</link>
+    <description>Recent content in 摘要 on Ding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%91%98%E8%A6%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《我家买了个动物园》</title>
+      <link>http://localhost:1313/post/%E6%88%91%E5%AE%B6%E4%B9%B0%E4%BA%86%E4%B8%AA%E5%8A%A8%E7%89%A9%E5%9B%AD/</link>
+      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%88%91%E5%AE%B6%E4%B9%B0%E4%BA%86%E4%B8%AA%E5%8A%A8%E7%89%A9%E5%9B%AD/</guid>
+      <description>你只需要20秒的勇气！《绿皮书》里说，这世界上到处都是害怕主动迈出第一步的孤独之人，太多人为自己的怯弱寻找理由。但其实，我们更需要的是时刻为</description>
+    </item>
+    
+    <item>
+      <title>工作与人生</title>
+      <link>http://localhost:1313/post/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E4%BA%BA%E7%94%9F/</link>
+      <pubDate>Wed, 05 Jan 2022 18:32:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E4%BA%BA%E7%94%9F/</guid>
+      <description>作者： 王小波 我现在已经活到了人生的中途，拿一日来比喻人的一生，现在正是中午。人在童年时从蒙眬中醒来，需要一些时间来克服清晨的软弱，然后就要投</description>
+    </item>
+    
+  </channel>
+</rss>
